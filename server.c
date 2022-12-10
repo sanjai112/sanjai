@@ -111,7 +111,6 @@ struct Node args; //struct to pass multiple arguments to server function
 args.port=new_fd;
 strcpy(args.username,username);
 pthread_create(&thr,NULL,server,(void*)&args); //creating thread for every client 
-connected
 pthread_detach(thr);
 } /*while end*/
 DeleteList(h); //deleting all clients when server closes
