@@ -70,8 +70,7 @@ while(1)
 
 n=recv(sockfd,buffer,MAXDATALEN-1,0);
 if(n==0){
-printf("\nDUE TO SOME UNEXPECTED REASONS SERVER HAS BEEN
-SHUTDOWN\n\n");
+printf("\nDUE TO SOME UNEXPECTED REASONS SERVER HAS BEEN SHUTDOWN\n\n");
 exit(0);
 }
 
